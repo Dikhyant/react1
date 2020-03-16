@@ -13,7 +13,7 @@ class AddMessage extends React.Component{
                     </div>
                 </form>
             </div>
-        )
+        );
     }
 }
 
