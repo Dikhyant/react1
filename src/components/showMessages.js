@@ -4,7 +4,9 @@ class ShowMessages extends React.Component{
     
     render(){
         return(
-            <div></div>
+            <div>
+                No messages
+            </div>
         )
     }
 }
