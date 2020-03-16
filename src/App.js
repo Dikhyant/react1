@@ -1,5 +1,6 @@
 import React from 'react';
-import { ChatManager, TokenProvider } from '@pusher/chatkit-client'
+import { ChatManager, TokenProvider } from '@pusher/chatkit-client';
+import AddMessage from "./components/addMessage";
 
 class App extends React.Component {
   componentDidMount(){
@@ -21,7 +22,7 @@ class App extends React.Component {
   render(){
     return (
       <div className="App">
-        Hey
+        <AddMessage />
       </div>
     );
   }
