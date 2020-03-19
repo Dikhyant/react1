@@ -1,21 +1,21 @@
 import React from "react";
 
-class AddMessage extends React.Component{
+class AddRoom extends React.Component{
     state = {
-        text: ""
+        name: ""
     }
 
     handleChange = (e) =>{
         this.setState({
             [e.target.id]: e.target.value
-        });
+        })
     }
 
     handleSubmit = (e) =>{
         e.preventDefault();
-        this.props.sendMessage(this.state.text);
+        this.props.addRoom(this.state.name);
         this.setState({
-            text: ""
+            name: ""
         })
     }
 
@@ -24,15 +24,16 @@ class AddMessage extends React.Component{
             <div>
                 <form onSubmit={this.handleSubmit}>
                     <div>
-                        <textarea id="text" value={this.state.text} onChange={this.handleChange}></textarea>
+                        <input id="name" value={this.state.name} onChange={this.handleChange}>
+                        </input>
                     </div>
                     <div>
-                        <button>Send</button>
+                        <button>Add</button>
                     </div>
                 </form>
             </div>
-        );
+        )
     }
 }
 
-export default AddMessage;
+export default AddRoom;
