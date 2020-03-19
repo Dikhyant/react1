@@ -5,13 +5,13 @@ class ShowMessages extends React.Component{
     render(){
         const messages = this.props.messages.map(function(message){
             return(
-                <div key={message.id}>
-                    {message.text}
+                <div key={message.id} className="card-panel teal right-align">
+                    <span className="white-text">{message.text}</span>
                 </div>
             )
         })
         return(
-            <div className="container">
+            <div className="container right-align right">
                 {messages}
             </div>
         )

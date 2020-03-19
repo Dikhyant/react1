@@ -114,8 +114,8 @@ class App extends React.Component {
             <ShowRooms rooms={this.state.rooms} subscribeToRoom={this.subscribeToRoom}/>
             <AddRoom addRoom={this.addRoom}/>
           </div>
-          <div className="col s9">
-            <ShowMessages messages={this.state.messages}/>
+          <div className="col s9 card-panel">
+            <div className="right-align"><ShowMessages messages={this.state.messages}/></div>
             <AddMessage sendMessage={this.sendMessage}/>
           </div>
           

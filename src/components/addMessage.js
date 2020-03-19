@@ -21,13 +21,13 @@ class AddMessage extends React.Component{
 
     render(){
         return(
-            <div>
+            <div className="">
                 <form onSubmit={this.handleSubmit}>
                     <div>
-                        <textarea id="text" value={this.state.text} onChange={this.handleChange}></textarea>
+                        <textarea id="text" className="materialize-textarea" value={this.state.text} onChange={this.handleChange}></textarea>
                     </div>
                     <div>
-                        <button>Send</button>
+                        <button className="btn waves-effect waves-light">Send<i class="material-icons right">send</i></button>
                     </div>
                 </form>
             </div>
